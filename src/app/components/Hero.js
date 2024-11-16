@@ -5,21 +5,22 @@ import Link from "next/link";
 import { CiShoppingCart } from "react-icons/ci";
 import { useState } from "react";
 
-const Hero = () => {
+
+const Hero = ({children}) => {
   
     const menuItem = [
         {title: 'HOME',
         link : '/'},
         {title: 'ABOUT',
-        link : '/About'},
+        link : '/about'},
         {title: 'OURMENU',
-        link : '/Ourmenu'},
+        link : '/ourmenu'},
         {title: 'SHOP',
-        link : '/Shop'},
+        link : '/shop'},
         {title: 'BLOG',
-        link : '/Blog'},
+        link : '/blog'},
         {title: 'CONTACT',
-        link : '/Contact'}
+        link : '/contact'}
     ]
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -54,6 +55,7 @@ const Hero = () => {
               className="text-sm md:text-lg lg:text-xl text-white font-medium hover:text-yellow-400"
               href={menu.link}
             >
+              {/* <a>{menu.title}</a> */}
               {menu.title}
             </Link>
           </li>

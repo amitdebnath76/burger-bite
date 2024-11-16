@@ -1,8 +1,8 @@
 
 import Hero from "../components/Hero";
-import Navber from "../components/Navber";
+;
 
-const Home = () => {
+const home = () => {
   return (
     <>
       
@@ -11,4 +11,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default home;
