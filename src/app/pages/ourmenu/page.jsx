@@ -113,7 +113,7 @@
 // export default Ourmenu;
 
 // Next try
-'use client'
+"use client";
 import Image from "next/image";
 import React, { useState } from "react";
 import { GrLike } from "react-icons/gr";
@@ -226,7 +226,7 @@ const Ourmenu = () => {
         <h1 className="text-6xl font-semibold text-center mt-6">
           OUR CRAZY BURGERS
         </h1>
-        <div className="grid grid-cols-4 gap-7 px-16">
+        <div className="grid grid-cols-4 gap-7 px-16 mt-20">
           {menuItems.map((menu) => (
             <div key={menu.id} className="card bg-base-100 w-full shadow-xl">
               <Image
@@ -268,10 +268,56 @@ const Ourmenu = () => {
             </div>
           ))}
         </div>
+        {/* Ads Section */}
+    <div className='flex gap-14 mt-20 px-16'>
+    <div>
+          <div className="relative">
+            <Image
+              src="/assets/menu/ads-1.jpg"
+              alt="Ads Image"
+              height={500}
+              width={500}
+              // className="w-full h-auto"
+            />
+            <div className="absolute inset-0 flex flex-col justify-center items-end text-right pr-6">
+              <h1 className="text-white text-4xl font-bold mb-2">
+                GET YOUR FREE
+              </h1>
+              <h1 className="text-white text-4xl font-bold mb-4">
+                CHEESE FRIES
+              </h1>
+              <button className="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-500">
+                EXPLORE MORE
+              </button>
+            </div>
+          </div>
+      </div>
+    <div>
+          <div className="relative">
+            <Image
+              src="/assets/menu/ads-2.jpg"
+              alt="Ads Image"
+              height={800}
+              width={800}
+              // className="w-full h-auto"
+            />
+            <div className="absolute inset-0 flex flex-col justify-center items-end text-right pr-6">
+              <h1 className="text-white text-4xl font-bold mb-2">
+                GET YOUR FREE
+              </h1>
+              <h1 className="text-white text-4xl font-bold mb-4">
+                CHEESE FRIES
+              </h1>
+              <button className="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-500">
+                EXPLORE MORE
+              </button>
+            </div>
+          </div>
+      </div>
+    </div>
       </div>
     </>
   );
 };
 
 export default Ourmenu;
-
