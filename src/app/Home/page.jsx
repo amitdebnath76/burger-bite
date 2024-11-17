@@ -1,14 +1,17 @@
 
 import Hero from "../components/Hero";
+import CommonPages from "../pages/page";
 ;
 
-const home = () => {
+const Home = () => {
   return (
     <>
       
       <Hero></Hero>
+      <CommonPages></CommonPages>
+      
     </>
   );
 };
 
-export default home;
+export default Home;
