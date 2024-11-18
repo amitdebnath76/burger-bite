@@ -1,6 +1,6 @@
 
 import Hero from "../components/Hero";
-import CommonPages from "../pages/page";
+
 ;
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
     <>
       
       <Hero></Hero>
-      <CommonPages></CommonPages>
+      
       
     </>
   );
