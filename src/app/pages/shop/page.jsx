@@ -1,5 +1,9 @@
+
+import Carusel from '@/app/components/Carusel'
+import Slider from '@/app/components/Slider'
 import Image from 'next/image'
 import React from 'react'
+
 
 const Shop = () => {
   return (
@@ -21,6 +25,8 @@ const Shop = () => {
       </div>
 
     </div>
+    {/* PAralux Effect */}
+    
     {/* Download App section */}
     <div className='bg-yellow-400 flex gap-12 px-20 py-10 mt-24'>
       <div className='space-y-10'>
@@ -34,7 +40,10 @@ const Shop = () => {
       <div>
         <Image src='/assets/shop/e-shop.png' alt='Our Shop Image' width={600} height={800}></Image>
       </div>
+
     </div>
+    {/* <Carusel></Carusel> */}
+    <Slider></Slider>
     </>
   )
 }
